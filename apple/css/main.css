@@ -1,0 +1,381 @@
+/*fontfase*/
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot');/* IE9 Compat Modes */
+    src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),/* IE6-IE8 */
+    url('../fonts/icomoon.woff') format('woff'),/* Modern Browsers */
+    url('../fonts/icomoon.ttf') format('truetype'),/* Safari, Android, iOS */
+    url('../fonts/icomoon.svg#icomoon') format('svg');/* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#globalnav{
+	width: 100%;
+	height: 44px;
+	background: #000;
+	font-family: "HanHei SC";
+	font-size: 16px;
+}
+#globalnav .Center{
+	padding: 0 12px;
+}
+#globalnav ul{
+	height: 44px;
+}
+#globalnav li{
+    font-size: 16px;
+	display: inline-block;
+	margin-left: 46px;
+    -webkit-transition: all 0.2s ease-out;
+    transition:all 0.2s ease-out;
+    -moz-animation:  all 0.2s ease-out;
+}
+#globalnav li a{
+	line-height: 44px;
+	text-decoration: none;
+	color: #fff;
+	padding: 0 10px;
+	display: inline-block;
+}
+#globalnav li a:hover{
+	color: #ccc;
+}
+#globalnav li:nth-child(1):hover,#globalnav li:nth-child(8):hover,#globalnav li:nth-child(9):hover{
+    color: rgba(255,255,255,0.8);
+}
+#globalnav li:nth-child(1),#globalnav li:nth-child(8),#globalnav li:nth-child(9){
+    font-family: "icomoon";
+    color: white;
+}
+#globalnav li:nth-child(2){
+    margin-left: 50px;
+}
+#globalnav li:nth-child(1):before {
+    content: "\eabe";
+}
+#globalnav li:nth-child(8):before {
+    font-weight: 100;
+    content: "\f02e";
+    margin-left: 30px;
+}
+#globalnav .shop:before {
+    content: "\e902";
+}
+.t{
+    width: 60%;
+    position: absolute;
+    left: 21%;
+    height: 44px;
+    z-index: 1200;
+    top: 0;
+    margin-left: 100px;
+    background: #000;
+    opacity: 0;
+    display: none;
+}
+.t .searchtext{
+    margin-top: 10px;
+    width: 506px;
+    height:24px;
+    background: #000000;
+    border: none;
+    color: white;
+    font-size: 16px;
+    line-height: 1.375;
+    font-weight: 400;
+    outline:none
+}
+.searchiocn{
+    font-family: "icomoon";
+    float: left;
+    color: white;
+    line-height: 44px;
+    margin-right: 8px;
+}
+.searchiocn:before {
+    font-weight: 100;
+    content: "\f02e";
+}
+@keyframes mysearch {
+    
+    0%{
+        opacity: 0;
+        left: 24%;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        left: 21%;
+    }
+}
+@keyframes cl {
+    form{
+    rotate(0deg)
+    }
+    to{
+
+    }
+}
+.an {
+    display: block;
+    opacity: 1;
+}
+.an .search{
+    animation: mysearch 1s;
+    -moz-animation: mysearch 1s;	/* Firefox */
+    -webkit-animation: mysearch 1s;	/* Safari 和 Chrome */
+    -o-animation: mysearch 1s;	/* Opera */
+    opacity: 1;
+}
+/*banner*/
+.banner{
+	height: 495px;
+	position: relative;
+    overflow: hidden;
+}
+.banner .fl,.banner .fr{
+	position: relative;
+	width: 303px;
+	height: 495px;
+	text-align: center;
+    opacity: 0;
+	z-index: 100;
+    -webkit-transition: all 0.4s ease-out;
+    transition:all 0.4s ease-out;
+    font-family: "icomoon";
+
+}
+.fl .but:before{
+    font-family: "icomoon";
+    color: #999999;
+    font-size: 40px;
+    text-align: center;
+    content: "\e900";
+}
+.fr .but:before{
+    font-family: "icomoon";
+    color: #999999;
+    font-size: 40px;
+    text-align: center;
+    content: "\e901";
+}
+.banner .fl:hover,.banner .fr:hover{
+    opacity: 1
+}
+.banner .but{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	border: 0;
+	background: rgba(80, 80, 80, 0.6);
+}
+.banner .fl .but{
+	position: absolute;
+	left: 10%;
+	top: 45%;
+	
+}
+.banner .fr .but{
+	position: absolute;
+	right: 10%;
+	top: 45%;
+}
+.tabList{
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    bottom: 20px;
+    position: absolute;
+    z-index: 100;
+}
+.tabList ul{
+    display: inline-block;
+}
+.tabList li{
+    list-style: none;
+    float: left;
+    width: 50px;
+    height:22px;
+    margin: 0 5px;
+    position: relative;
+    text-align: center;
+}
+.tabList a{
+    top: 10px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    outline: none;
+    position: absolute;
+    opacity: 1;
+    -webkit-transition: opacity 500ms ease;
+    transition: opacity 500ms ease;
+    box-sizing: border-box;
+    background: rgba(26,26,26,0.5);
+}
+.imagsBox{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 495px;
+    z-index: auto;
+}
+
+.imagsBox  a{
+    position: absolute;
+	display: block;
+	float: left;
+	width: 100%;
+    height: 495px;
+}
+ .imgBox{
+    width: 100%;
+    height:100%;
+     min-width: 1024px;
+     text-align: center;
+     color: white;
+	 background-repeat: no-repeat;
+	 background-color: black;
+ }
+.imgBox .text{
+    position: absolute;
+    top: 12%;
+    width: 100%;
+    z-index: 100;
+    color: white;
+    text-align: center;
+}
+.imgBox h1{
+    width: 95px;
+    height: 24px;
+    background-size: 95px 24px;
+    background-repeat: no-repeat;
+    background-image: url(http://images.apple.com/v/home/cz/images/shared/logo_iphone_large.png);
+    left: 50%;
+    margin-left: -47.5px;
+    position: relative;
+}
+.imgBox   h2{
+    font: 37px/60px 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+    position: absolute;
+    left: 47%;
+}
+ .iA{
+	 height: 100%;
+	 width:100%;
+	 background-size: contain;
+	 background-position:  bottom center;
+	 background-repeat: no-repeat;
+	 background-image: url("../images/banner02.jpg");
+}
+ .shoplist{
+     display: inline-block;
+     position: relative;
+     width: 100%;
+     -moz-column-count:4; /* Firefox */
+     -webkit-column-count:4; /* Safari 和 Chrome */
+     column-count:4;
+     -moz-column-gap:3px; /* Firefox */
+     -webkit-column-gap:3px; /* Safari and Chrome */
+     column-gap:3px;
+ }
+.shoplist li{
+    padding-right:2px ;
+    width: 380px;
+    height:200px;
+    float: left;
+    position: relative;
+    border-top: 2px solid #fff;
+}
+.shoplist  li  a{
+    top:0;
+    position: absolute;
+    display: block;
+    width: inherit;
+    height:inherit;
+    background-position: center;
+}
+.shoplist  li:first-child  a{
+    background-image: url("../images/gifts_large00.jpg");
+}
+.shoplist  li:nth-child(2)  a{
+     background-image: url("../images/gifts_large01.jpg");
+ }
+.shoplist  li:nth-child(3)  a{
+    background-image: url("../images/gifts_large02.jpg");
+}
+.shoplist  li:nth-child(4)  a{
+    background-image: url("../images/gifts_large03.jpg");
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height:403px;
+    background: #F2F2F2;
+    font-size: 10px;
+    position: relative;
+    line-height: 1.66667;
+}
+footer .footerTl{
+    padding: 16px 0 11px ;
+    color: #999;
+    border-bottom: 1px  solid  #e3e3e3;
+    font-size: 8px;
+}
+footer h3{
+    font-size: 10px;
+    line-height: 20px;
+}
+footer .footerLink{
+    -moz-column-count:5; /* Firefox */
+    -webkit-column-count:5; /* Safari 和 Chrome */
+    column-count:5;
+    color: #333333;
+    padding-top: 24px;
+}
+footer .footerLink ul{
+   display: inline-block;
+    width: 100%;
+}
+footer .footerLink ul li a{
+    height: 20px;
+    line-height: 20px;
+    color: #333333;
+}
+footer  a:hover{
+    text-decoration:underline;
+}
+.footerlow{
+    color: #999999;
+    padding: 20px 0 24px;
+    font-size: 10px;
+}
+.footerlow .aaa{
+    width: 100%;
+    height:25px;
+    border-bottom: 1px  solid  #e3e3e3;
+}
+.footerlow a{
+    color: blue;
+}
+.footerlow a:hover{
+    color: #000;
+    text-decoration:underline;
+}
+.sss a{
+    border-right: 1px solid #d6d6d6;
+    margin-right: 10px;
+    padding-right: 12px;
+    color: #666;
+    font-size: 10px;
+}
+.sss a:hover{
+    color: #333;
+    text-decoration: underline;
+}
