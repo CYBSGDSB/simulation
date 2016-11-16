@@ -24,6 +24,29 @@
 .show{
     display: block;
 }
+@keyframes anshow {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes anhide {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+     opacity: 0;
+    }
+}
+
 li{
 
     list-style: none;
