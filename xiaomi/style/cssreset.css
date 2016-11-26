@@ -7,9 +7,9 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+time, mark, audio, video,li{
     margin:0;
     padding:0;
     border:0;
@@ -17,35 +17,36 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+      font-family: "Helvetica Neue", "Helvetica", "Arial", "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
 }
- 
+
 body {
     line-height:1;
 }
- 
+
 :focus {
     outline: 1;
 }
- 
+
 article,aside,canvas,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section,summary { 
+footer,header,hgroup,menu,nav,section,summary {
     display:block;
 }
- 
+
 nav ul {
     list-style:none;
 }
- 
+
 blockquote, q {
     quotes:none;
 }
- 
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content:'';
     content:none;
 }
- 
+
 a {
     margin:0;
     padding:0;
@@ -53,44 +54,49 @@ a {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    text-decoration: none;
 }
- 
+
 ins {
     background-color:#ff9;
     color:#000;
     text-decoration:none;
 }
- 
+
 mark {
     background-color:#ff9;
-    color:#000; 
+    color:#000;
     font-style:italic;
     font-weight:bold;
 }
- 
+
 del {
     text-decoration: line-through;
 }
- 
+
 abbr[title], dfn[title] {
     border-bottom:1px dotted #000;
     cursor:help;
 }
- 
+
 table {
     border-collapse:collapse;
     border-spacing:0;
 }
- 
+
 hr {
     display:block;
     height:1px;
-    border:0;   
+    border:0;
     border-top:1px solid #cccccc;
     margin:1em 0;
     padding:0;
 }
- 
+
 input, select {
     vertical-align:middle;
+}
+li{
+
+    list-style: none;
 }
