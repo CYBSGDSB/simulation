@@ -27,7 +27,7 @@
   margin-left: 14px;
   margin-bottom: 14px;
   width: 234px;
-
+  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -882,6 +882,8 @@ transition: all .2s linear;
   background: #fff;
   text-align: center;
   padding-bottom: 38px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 .video .video-list .video-item:nth-child(1){
   margin-left: 0;
@@ -897,6 +899,12 @@ transition: all .2s linear;
   margin: 0 0 28px;
 
 }
+.video .video-item:hover{
+  -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+	-webkit-transform: translate3d(0, -2px, 0);
+	transform: translate3d(0, -2px, 0)
+}
 .video .video-list .video-item .figure .play{
   display: block;
   position: absolute;
@@ -911,6 +919,7 @@ transition: all .2s linear;
   border-radius: 12px;
   background-color: #424242;
   background-color: rgba(0,0,0,0.6);
+  -webkit-transition: all .5s;
   transition: all .5s;
 
 }
