@@ -74,7 +74,9 @@
 
 
 
-
+body{
+  background: #F5F5F5;
+}
 /*Topbar*/
 .Topbar{
   width: 100%;
@@ -124,7 +126,7 @@
 
 /*header*/
 .header{
-
+  position: relative;
   height: 100px;
   width: 100%;
 }
@@ -155,6 +157,7 @@
   list-style-type: none;
 
 }
+
 .header .nav-items .nav-item{
   display: list-item;
   float: left;
@@ -211,9 +214,56 @@
   background: #FF6700;
   color: #fff;
 }
-
-
-
+.header .nav-Menu{
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 229px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  background: #fff;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+  overflow: hidden;
+  z-index: 9999;
+}
+.header .nav-Menu li{
+  position: relative;
+  float: left;
+  width: 180px;
+  padding: 35px 12px 0;
+  text-align: center;
+}
+.header .nav-Menu li:nth-child(1):before{
+  content: "";
+  width: 0;
+}
+.header .nav-Menu li:before{
+  position: absolute;
+  left: 0;
+  top: 35px;
+  z-index: 1;
+  width: 1px;
+  height: 100px;
+  content: "";
+  background-color: #e0e0e0;
+}
+.header .nav-Menu li>a{
+  display: block;
+  width: 160px;
+  height: 110px;
+  margin: 0 auto 16px;
+  text-align: center;
+}
+.header .nav-Menu li p{
+  font-size: 14px;
+  line-height: 21px;
+  color: #333;
+}
+.header .nav-Menu .price {
+  margin: 0;
+  line-height: 20px;
+  color: #ff6700;
+}
 
 /*banner*/
 .banner{
@@ -451,8 +501,9 @@
 
 /*page-mian*/
 .page-mian{
-  padding-top: 60px;
+  padding: 60px 0;
   background: #F5F5F5;
+
 }
 .page-mian .intelligence {
   margin-bottom: 8px;
@@ -878,7 +929,7 @@ transition: all .2s linear;
   position: relative;
   float: left;
   width: 296px;;
-  margin-left: 18px;
+  margin-left: 14px;
   background: #fff;
   text-align: center;
   padding-bottom: 38px;
@@ -949,4 +1000,147 @@ transition: all .2s linear;
   font-size: 12px;
   line-height: 18px;
   color: #b0b0b0;
+}
+
+/*footer*/
+footer{
+  background:#fff;
+}
+footer a{
+    color: #616161;
+}
+footer a:hover{
+  color: #ff6700;
+}
+footer .footerTop{
+  padding: 27px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+footer .footerTop ul{
+  width: 100%;
+  height: 25px;
+}
+footer .footer-top-item{
+  float: left;
+  width: 19.8%;
+  height: 25px;
+  border-left: 1px solid #e0e0e0;
+
+  text-align: center;
+}
+
+footer .footer-top-item:first-child{
+  border-left: 0;
+}
+footer .footer-top-item a{
+  font-size: 16px;
+  line-height: 25px;
+
+}
+
+footer .footer-top-item a i{
+  margin-right: 6px;
+font-size: 24px;
+line-height: 24px;
+vertical-align: -4px;
+}
+footer .footerlinks{
+  padding: 40px 0;
+}
+footer .footerlinks .col-links{
+  float: left;
+  width: 160px;
+}
+footer .footerlinks .col-links dt{
+  font-size: 14px;
+  line-height: 18px;
+  color: #424242;
+  margin: -1px 0 26px;
+}
+footer .footerlinks .col-links dd{
+  margin: 10px 0 0;
+  line-height: 18px;
+  font-size: 12px;
+}
+footer .footerlinks .col-contact{
+  float: right;
+  width: 251px;
+  height: 112px;
+  border-left: 1px solid #e0e0e0;
+  text-align: center;
+  color: #616161;
+}
+footer .footerlinks .col-contact .phone{
+  font-size: 22px;
+  line-height: 22px;
+  color: #ff6700;
+}
+footer .footerlinks .col-contact .service-time{
+  font-size: 12px;
+  line-height: 18px;
+  color: #616161;
+  padding-bottom: 16px;
+}
+footer .footerlinks .col-contact .Cs{
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  width: 118px;
+  height: 28px;
+  border:1px solid #ff6700;
+  background: #fff;
+  color: #ff6700;
+  font-size: 12px;
+  line-height: 28px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+footer .footerlinks .col-contact .Cs:hover{
+  color: #fff;
+  background: #ff6700;
+}
+footer .footer-container{
+  padding: 30px 0;
+  font-size: 12px;
+}
+
+footer .footer-container .footer-logo{
+  float: left;
+  width: 57px;
+  height: 57px;
+  margin-right: 10px;
+  background: url(../images/logo-footer.png) no-repeat 50% 50%;
+}
+footer .footer-container .info-text{
+    line-height: 18px;
+    float: left;
+}
+footer .footer-container .info-text span{
+  margin: 0  .05em;
+  font-family: sans-serif;
+  color: #b0b0b0;
+}
+footer .footer-container .info-text .tt,footer .footer-container .info-text .tt a{
+  color: #b0b0b0;
+
+}
+footer .footer-container .info-text .tt a:hover{
+  color: #ff6700;
+}
+footer .footer-container .info-links {
+  float: right;
+  height: 28px;
+  margin: 4px 0 0;
+}
+footer .footer-container img{
+  width: auto;
+  height: 28px;
+  margin-left: 7px;
+}
+footer .footer-container .aa{
+  clear: both;
+  margin: 30px auto 0;
+  width: 267px;
+  height: 19px;
+  background: url(../images/slogan2016.png) no-repeat center 0;
 }

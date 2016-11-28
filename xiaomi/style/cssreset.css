@@ -36,6 +36,9 @@ footer,header,hgroup,menu,nav,section,summary {
 nav ul {
     list-style:none;
 }
+p{
+  display: block;
+}
 
 blockquote, q {
     quotes:none;
