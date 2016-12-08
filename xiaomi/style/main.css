@@ -1,3 +1,11 @@
+/*hover*/
+.header .hover {
+  height: 229px!important;
+  -webkit-box-shadow:  0 3px 4px rgba(0,0,0,0.18);
+  box-shadow:  0 3px 4px rgba(0,0,0,0.18);
+  -webkit-transition:  0 3px 4px rgba(0,0,;0,0.18)
+}
+
 /*公共*/
 .title {
   position: relative;
@@ -73,10 +81,6 @@
 }
 
 
-
-body{
-  background: #F5F5F5;
-}
 /*Topbar*/
 .Topbar{
   width: 100%;
@@ -218,13 +222,17 @@ body{
   position: absolute;
   top: 100px;
   width: 100%;
-  height: 229px;
+  height: 0px;
   text-align: center;
   border-top: 1px solid #e0e0e0;
   background: #fff;
-  box-shadow: 0 3px 4px rgba(0,0,0,0.18);
   overflow: hidden;
   z-index: 9999;
+  -webkit-transition: all   .5s;
+  -moz-transition: all   .5s;
+  -ms-transition: all  .5s;
+  -o-transition: all   .5s;
+  transition:all  .5s;
 }
 .header .nav-Menu li{
   position: relative;
@@ -312,6 +320,9 @@ body{
   position: absolute;
   width: 100%;
   height: 100%;
+  opacity: 1;
+  transition: all .5s;
+  -webkit-transition: all .5s;
 }
 .banner-imgBoxs .ud a{
   position: absolute;
@@ -454,11 +465,28 @@ body{
 }
 .star-commodity .star-do {
   overflow: hidden;
+  margin-left: -14px;
 }
-.star-commodity .star-do ul{
+.star-a-d{
+  color: #e0e0e0;
+}
+.star-commodity .star-do .plist {
   width: 250%;
-  -webkit-transition: all .6s;
-  transition: all .6s;
+  -webkit-transition: left .6s;
+  transition: left .6s;
+  position: relative;
+  left: 0px;
+
+}
+.star-commodity .star-do ul li{
+  background: #FAFAFA;
+  border-top: 1px transparent solid;
+}
+.star-commodity .star-do ul li:hover{
+  -webkit-box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+  box-shadow: 0 0px 0px rgba(0,0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0)
 }
 .star-commodity .star-do li:last-child {
     margin-right: 0;
@@ -882,15 +910,14 @@ transition: all .2s linear;
 .content-box .xm-page-turn a:nth-child(2){
   right: 0;
 }
-.content-box:hover .xm-page-turn a{
-  opacity: 0.5;
-}
+
 .content-box .xm-page-turn a:hover{
     background-color: rgba(66,66,66,0.5);
-  opacity: 1;
+    opacity: 1;
 }
-
-
+.Selected  .xm-page-turn a {
+  opacity: 0.9;
+}
 /*video*/
 .video .tfr a{
   font-size: 16px;
